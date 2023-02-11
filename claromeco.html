@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conocé Claromecó</title>
+  <link rel="stylesheet" href="resetstyle.css">
+  <link rel="stylesheet" href="clarostyles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
+  <script src="menudesplegable.js"></script>
+</head>
+
+<body class="gridcontainer">
+  
+  <header class="header">
+   
+    <div class="logo">        
+        <a href=#sobreclaromeco><img src="logo.png" alt="Logo" class="logoimg"></a> 
+        <a href=#sobreclaromeco> <span class="logo-text">CLAROMECÓ </span></a>     
+    </div>
+    
+    <ul class="header-nav"> 
+        <li class="text-container"><a href="#mapa" class="nav-item">MAPA</a></li>
+        <li class="text-container"><a href="http://" class="nav-item">CÓMO LLEGAR</a></li>
+        <li class="text-container"><a href="http://" class="nav-item">PRONÓSTICO</a></li>
+        <li class="text-container"><a href="http://" class="nav-item">TABLA DE MAREAS</a></li>
+    </ul>  
+         
+  </header>
+
+  <div class="main-container">
+
+
+ <nav class="menudesplegable">
+            
+        <li class="list-button">   
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAJ9JREFUSEvNldENgCAMRI9J1E0cRSfTURxFJ9HU2AQbEQItyh803KMtcA7GwxnroyqgBzABaAuzWgGMABbS8TOgQFMozttJq5OA/YqWlu2m44tVBzBQVo0PJeNy/Zy/ZfA5IHQfknsQy8Ac8P8e5L655B6YA0JNDoHV3oEawLxE6gDN73pjX/H/IjKcWcETSHx4MpzckrzuKzWX6KHMAQeKMDIZg5B/vwAAAABJRU5ErkJggg=="/>     
+          <a href="" class="nav-link">Noticias</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAM1JREFUSEvtlM0NgkAQhT9KsA8TGtBoCVKCR7uwBU9e7UBL0GgBHCzEDjRjGILJ/gwsSEzkCC/ve/OG3YyBn2xgf/6AaMNfrehZxekV2jSzAM7AwtHLAyiBHXBqfm8L0BCh7g/AWgU+wBTYAzPgBmyAOxCacgVsgRwodBIf4FqZaxCBzCMA0QrkCFyApbzwAVxViNayJ9HITiYhQNcJxPMjRJ870DpNAN9fYq2obsc1QfT4GwVv71EAqVdF0g4s7YwHsKRrrUntOwr8fcALVlwxGf8QjBAAAAAASUVORK5CYII="/> 
+          <a href="" class="nav-link">Hospedaje</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvtlOENgyAQhT8ncAQ7gis4QVdwk9ZN3EBHcJVu0A3aXCIJnpoDI9Ef8I/weB93PChIPIrE/lwC+M1VObg1r4EBeAAT0Phd2arAMtTrI/D0TBeeZwAc0DEygL07ul+LrDeoYxxcwRcoDffPnHuRRafoDbwMQAeI7hBANsnmFqgUSE7ee+aHAb6vTs1ecZu6kM8uA6y4r15uvgOzZVGCkJhGGWpxcsAf00M3GVKaNqwAAAAASUVORK5CYII="/>
+          <a href="" class="nav-link">Restaurants y bares</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUVJREFUSEu1leFVwkAQhL90oB3QgXagdmAHSAVCBWAFYgdQgXagdqAVWAJYAbx5by8vHnt3OUz2V0JuZ3b3ZoeGkaMZGZ9agoMV1Duv90EDHoxgBayBfTTCFMEF8Ag8xSP3OhD4EvgC7hySGEPg78C1ESi/DY9ACR/AlZfgiCIU9A3cxgWl7kAkcyBUc28jEIBCBbwAb/aeGmkvFW2AaULO+jbLSb2kIlX+CvxaNwJUPADP9qx7UkdulAiUeAMsTFVdEI1QJJ82+yJBkKAOBuLw26WjJt3TLlq8E4xuB7UEE+CnhsBrcdAReQThkvVNM9/aIW1tkPC/Lll4OZnKGv5sblxlbtG63qJO1IEUpZByBBzkWbVoWW/JWIXrXTmzc73FIch6V2pE59h117vaOkqbHBc82B9OylpGJ8gZZ9GLqpP7JBwBqodLGcS/O10AAAAASUVORK5CYII="/>
+          <a href="" class="nav-link">Paradores de Playa</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQBJREFUSEvtldERAUEQRN9lIAQZIAQRIAJEgEgQARmQgRAIQQgyoLpqT5WzMzun+DOfd3v9Zrpn6yp+XNWP9WkLmKWG9tHG2gD6wCkJD4FLBBIFdJK4ICqJC3IrQaIAWTJtiOnZ/BsA+b4zhARw8yhNUPsui3Ili9w8PEDTd8sNNw8PkPPdgph5lCyS4Bg4GMoT4OgFXQLIpjPQNUSuwMBb1xJgAywKq7gFltYZD6ANUveR0hTZm+0B9EEvop7EBXkrC6CR10Hx+tgKkKUvlQMoUFljXS6Lq0unKRT8s3IArd2oZff1cX2r1XUBnvY9vSxt3x8Q/9WGvfww9HgnnwIebfooGa33yi4AAAAASUVORK5CYII="/>
+          <a href="" class="nav-link">Atracciones turísticas</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAaBJREFUSEu1ldExREEQRc9GQAbIgAxkgAjwywciQAT44BcRIAMiIAQiQATUUdOv5s2+N7Orartqq/bt9uvb93bfmQkLjsmC69MCWAa2gG1gHVhNDb0Db8AjcF9rsgawB1wAgtRCsJMENpU3BnAH7KbsF+A5fez6K7HZBI6BlZR3mYB6IEMAJh6lrKtUpMbgDDgdyy8B1PoB+AaUSI2Na+AAuAEOB57jPXN3crlKAOkvJaoyifjJvvtO+ezfyuXMnMla5OcAdnwLfGTbEnktBpFncWfSscgBlMOV3Acccll0FsvEPJ7Savd8EOgbaceHZGiB6JXXXKacQRSM3/7DwAZ6dWoArW51tZJqRNkri7/JwPirnQOUEtUYtFw+OIMYsrZ3RcdmEF3auYV0ua6WjaHzbcCGewxiTWOPxxhMbUpNy9JoIdM5YKGhCIBaTvfe2FExZfkMKRzb6TwPA3Pzw85iHnh5qP1nvinzApQgyqaz7djjOsxUznAQp3bheELKJs77ssAsR3nzyrSo2xVXpmAehq608jWjdSc3C7QSFg7wCx7zZRmNh4GkAAAAAElFTkSuQmCC"/>
+          <a href="" class="nav-link">Arte y Cultura</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAc5JREFUSEu1lTsyBVEQhr+7AkRkWAECUuyAIkeuymMD2IBHlRw5hRUQE2AHZGSsgPpV91TPuefMHY/bycz06dN/P/7u6dBn6fTZP20AFoAJYA6YtIAegVtAz+umIJsA5OwkOC35EciagXXZlAB2gR2zfgFOgU1gwHQfwCGwCoyaTnf2UoQcgC5umOGWOdLnoAHpXY7fzUbAB/Z+ZIFUOCmA6n1pp1OltDO1UjkfTL8IXLlNCvBsKcfI2xLNM5GP8RyA0lZTlfpQweu06e8L57qrPlVZxAzUyBW7OG80jH6U1b4ptkPd3UY0vrGPM+tTbQ5EN/FdIo4LRDICHANLSdQXwDrwGu7M2rt8qYc1gM/goIrAHJ8XSrIMCEgSK1D5jiVygCebWqehjBXlcALyZtm5WjRW5l6Fb98RwEtUo5ndVu3VgyjivnoRxWmuIL/XSq7JOYqKPXeJsxkgZZNTNdtkp2mNx4Xal9Q+R1ma6tJ/DJp215hH0LQq3CY3E34Wue+6xlUho7js9B1nIi2Nzpz7Ouu57NxBXNfS6VuNUwklKoGmXnqX7P7q9cPR8DivS40VJUUQ0bxL2v4yxenSL7Nazb8F+CFT6+ZtMvgTwBdZb2AZ8PkKBQAAAABJRU5ErkJggg=="/>
+          <a href="" class="nav-link">Deportes</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="list-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAQhJREFUSEvVlVERwjAQRF8VgAOQgANwACgAFAAKQAIOQAISkIAEcIADmO30ZjIpbZM2/ej9pNM2u7d3l01Gz5H1jM/gCKbAEvLEL6pOCgXjAnQLLJyS59hdCFbABtD6L1oRKEMDVeZ1EUwwc0BV49AoESi7K2AgVr5vKKL3X4ngBUz8JgHJCHyg5AqGT/ABRn32QFN0cxqdvAdV03gGTi1GNfig2fjuAD3Lc2QPbjlbW4XAdPjezgE0MLnlvkZZkIJ74ZQP4Ag8HUBTpvcaECUzj3VTU2D7BCpSAao3vjLZjLlr8H2gTYdio2slIl0XhJWVir0P5KxSpVVlk4pmz276qcv3WAXRXD/oACoZEqwxxQAAAABJRU5ErkJggg=="/>
+          <a href="" class="nav-link">Información útil</a>
+        </li>
+      </ul>*/
+
+
+    </nav>
+
+    <div class="SobreClaromeco" id="sobreclaromeco">
+      <h1>Sobre Claromecó</h1>
+        <h3>En mapuche: K'la-Rome-Kó,: "triple agua",  literalmente "tres arroyos"</h3>
+        <div class="text-container-left">
+          <h2>Ubicación</h2>
+          <p>Claromecó es una localidad balnearia y principal polo turístico del Partido-Municipio de Tres Arroyos, ubicado en la zona costera del interior de la Provincia de Buenos Aires, Argentina.</p>
+        </div>
+
+        <div class="text-container-right">
+          <h2>Historia</h2>
+          <p>El balneario Claromecó fue fundado oficialmente el 9 de noviembre de 1920.
+          La zona que ocupa el balneario fue en sus orígenes más remotos residencia de ciertas parcialidades tehuelches. Las excavaciones realizadas al sur del Arroyo Claromecó, muestran instrumentos de piedra y restos humanos, que denotan la existencia de un cementerio indígena.</p>
+        </div>
+
+        <div class="text-container-left">
+          <h2>Población</h2>
+          <p>Cuenta con 2081 habitantes (Indec, 2010), lo que representa un incremento del 6,8 % frente a los 1947 habitantes (Indec, 2001) del censo anterior. Incluye al Barrio-Parque Dunamar.</p>
+        </div>
+
+        <div class="text-container-right">
+          <h2>Naturaleza</h2>
+          <p>El balneario cuenta de diversos paisajes y fauna. La playa es uno de sus principales atractivos, pero también se encuentra el Río Claromecó que divide Claromecó- Dunamar, rodeado de una verdosa flora. Diversos tipos de aves son parte de estos paisajes, como las gaviotas, patos, teros, gallaretas, garzas, golondrinas, colibries, aguiluchos, etc. </p>
+        </div>
+      </div>    
+    
+  </div>
+  
+  <div class="mapa" id="mapa">
+    <h2 class="h2mapa">Mapa Claromecó</h2>
+    <div class="mapinteractivo">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12428.697571809611!2d-60.07103641958394!3d-38.8513648954626!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958dc31165b5a9df%3A0xe0863a14be0aabdc!2sClaromec%C3%B3%20frente%20al%20mar!5e0!3m2!1ses-419!2sar!4v1675915385267!5m2!1ses-419!2sar" width="1000px" height="500px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div> 
+  
+</body>
+</html>
